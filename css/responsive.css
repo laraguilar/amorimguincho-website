@@ -1,0 +1,20 @@
+@media (min-width: 830px){
+    #home .container{
+        display: inline-block;
+        position: relative;
+    }
+
+    .text-landing{
+        position: absol;
+    }
+}
+
+
+@media (min-width: 1000px){
+    h1, #subtitle{
+        color: white;
+    }
+    .img-landing{
+        background-size: cover;
+    }
+}

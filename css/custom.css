@@ -1,0 +1,146 @@
+body, html {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+p, ul {
+    color: #767474;
+}
+
+section{
+    min-height: 50vh;
+}
+
+
+h1{
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+}
+
+#title-green {
+    color: var(--primary);
+}
+
+#subtitle{
+    color: black;
+}
+
+section #home{
+    max-height: 100vh;
+}
+
+.img-landing img{
+   
+    width: 100vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.header .nav-link{
+    margin-left: 10px;
+    color: #767474;
+    border-bottom: solid 3px transparent;
+
+}
+
+.header .nav-link:hover{
+    color: var(--primary);
+    border-bottom: solid 3px var(--primary);
+
+}
+
+
+.header .nav-link{
+    text-transform:capitalize;
+    font-weight: 500;
+}
+
+
+.carouselExampleControls img{
+    height: auto;
+}
+
+.sobre-nos p {
+    text-align: justify;
+    color: #767474;
+    
+}
+
+.sobre-nos #logo-amorim-grande{
+    max-height: 100px;
+}
+
+
+.copyright{
+    margin-left: 10px;
+    font-size: small;
+    color: #767474;
+}
+
+.btn{
+    margin: 2px;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-darken);
+    border-color: var(--primary-darken);
+}
+
+.btn-outline-primary{
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline-primary:hover{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.height-fixed{
+    height: 100vh;
+}
+
+
+.texto-primary{
+    color: var(--primary);
+}
+
+.title-section{
+    color: var(--primary);
+}
+
+#servicos ul{
+    list-style: none;
+    padding-left: 0%;
+}
+
+.destaque {
+    min-height: 300px;
+    border-radius: 5%;
+}
+.box .img-card{
+    margin: auto;
+    height: 182px;
+    width: 182px;
+}
+
+.card {
+    min-height: 450px;
+}
+
+#contato .col {
+    vertical-align: middle;
+}
+
+.espaco {
+    height: 100px;
+}
