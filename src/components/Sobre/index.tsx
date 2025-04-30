@@ -1,8 +1,14 @@
+import { Logo } from "@/icons";
+import Image from "next/image";
+
 export default function Sobre() {
     return (
       <section id="sobre" className="py-16 bg-white">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4">
-          <img src="/imagens/sobre.jpg" alt="Sobre nós" className="w-64 h-64 object-cover rounded shadow" />
+          <Image src={Logo.src} alt="Sobre nós"
+          width={300}
+          height={300}
+          className="object-cover rounded shadow p-8" />
           <div>
             <h2 className="text-3xl font-bold mb-4">Sobre nós</h2>
             <p>

@@ -1,11 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
-import { useState } from "react";
+import { Guinchos } from "@/icons";
+import { useEffect, useState } from "react";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-const imagens = [
-  '/imagens/carrossel1.jpg',
-  '/imagens/carrossel2.jpg',
-  '/imagens/carrossel3.jpg'
-];
+const imagens = Guinchos.map((imagem) => imagem.src);
 
 export default function Carrossel() {
   const [atual, setAtual] = useState(0);
@@ -17,12 +16,20 @@ export default function Carrossel() {
     setAtual((prev) => (prev === imagens.length - 1 ? 0 : prev + 1));
   }
 
+  useEffect(() => {
+    const intervalo = setInterval(() => {
+      proximo();
+    }, 3000);
+
+    return () => clearInterval(intervalo);
+  }, [atual]);
+
   return (
     <section className="py-12 bg-gray-50">
       <div className="max-w-3xl mx-auto relative">
-        <img src={imagens[atual]} alt={`Slide ${atual + 1}`} className="w-full h-64 object-cover rounded shadow" />
-        <button onClick={anterior} className="absolute top-1/2 left-2 bg-white rounded-full p-2 shadow -translate-y-1/2">&lt;</button>
-        <button onClick={proximo} className="absolute top-1/2 right-2 bg-white rounded-full p-2 shadow -translate-y-1/2">&gt;</button>
+        <img src={imagens[atual]} alt={`Slide ${atual + 1}`} className="w-full h-80 object-cover rounded shadow" />
+        <button onClick={anterior} className="absolute top-1/2 left-2 bg-white rounded-full p-2 shadow -translate-y-1/2 hover:cursor-pointer"><IoIosArrowBack /></button>
+        <button onClick={proximo} className="absolute top-1/2 right-2 bg-white rounded-full p-2 shadow -translate-y-1/2 hover:cursor-pointer"><IoIosArrowForward /></button>
       </div>
     </section>
   );
