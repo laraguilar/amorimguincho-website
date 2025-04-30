@@ -1,21 +1,19 @@
+/* eslint-disable @next/next/no-img-element */
 import { BannerImage } from "@/icons";
-import Image from "next/image";
 import { IoCall, IoLogoWhatsapp } from "react-icons/io5";
 
 export default function Banner({telefone}: { telefone: string }) {
   return (
     <section className="relative flex items-center justify-center h-[500px]">
       {/* Imagem de fundo */}
-      <Image
+      <img
         src={BannerImage.src}
         alt="Guincho"
-        width={1108}
-        height={638}
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full object-cover h-full"
         style={{ objectFit: "cover" }}
       />
       {/* Overlay escuro */}
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="absolute inset-0 bg-black opacity-50 h-full"></div>
       {/* Conteúdo sobreposto */}
       <div className="relative z-10 text-center text-white">
         <h1 className="text-4xl font-bold mb-2">
