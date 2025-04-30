@@ -34,7 +34,7 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           REMOTE_PORT: 2222
           SOURCE: ./next
-          TARGET: /home3/${{ secrets.REMOTE_USER }}/public_html/
+          TARGET: ${{ secrets.REMOTE_TARGET }}
 
 
       # - name: Deploy to GitHub Pages
