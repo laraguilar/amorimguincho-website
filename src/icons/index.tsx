@@ -7,7 +7,6 @@ import guincho5 from './guincho/guincho5.jpeg'
 import guincho6 from './guincho/guincho6.jpeg'
 import guincho7 from './guincho/guincho7.jpeg'
 import guincho8 from './guincho/guincho8.jpeg'
-import guincho9 from './guincho/guincho9.jpeg'
 
 import carro from './carro.svg'
 import empilhadeira from './empilhadeira.svg'
@@ -27,7 +26,6 @@ export const Guinchos = [
     guincho6,
     guincho7,
     guincho8,
-    guincho9
     ]
 
 export const Carro = carro
