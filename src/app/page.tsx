@@ -7,7 +7,7 @@ import Servicos from "@/components/Servicos";
 import Sobre from "@/components/Sobre";
 
 export default function Home() {
-  const telefone = "27999992422";
+  const telefone = "27999996330";
   const email = "contato@amorimguincho.com"
   return (
     <>

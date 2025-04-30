@@ -15,7 +15,7 @@ export default function Banner({telefone}: { telefone: string }) {
       {/* Overlay escuro */}
       <div className="absolute inset-0 bg-black opacity-50 h-full"></div>
       {/* Conteúdo sobreposto */}
-      <div className="relative z-10 text-center text-white">
+      <div className="relative z-10 text-center text-white px-4">
         <h1 className="text-4xl font-bold mb-2">
           Serviços de Guincho e<br />Auto Socorro 24hrs
         </h1>

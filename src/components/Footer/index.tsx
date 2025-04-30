@@ -7,7 +7,7 @@ export default function Footer({telefone, email}: { telefone: string, email: str
     return `(${ddd}) ${numero.slice(0, 5)}-${numero.slice(5)}`;
   };
     return (
-      <footer id="contato" className="bg-[#006D33] text-white py-8 mt-8">
+      <footer id="contato" className="bg-[#006D33] text-white py-8 p-4">
         <div className="max-w-4xl mx-auto flex flex-col items-center gap-2">
           <div className="w-full">
           <div className="text-lg font-semibold">Contato</div>
@@ -26,10 +26,10 @@ export default function Footer({telefone, email}: { telefone: string, email: str
             </a>
           </div>
         </div>
-        <div className="h-0.5 mx-4 bg-white/30 w-full rounded-full"></div>
-          <div className="flex w-full flex-row justify-between text-sm opacity-80">
-            <span>Copyright &copy; 2025</span>
-            <span>Desenvolvido por Lara Aguilar</span>
+        <div className="h-0.5 mx-4 mt-5 bg-white/30 w-full rounded-full"></div>
+          <div className="flex w-full flex-col md:flex-row justify-between  text-center md:text-left text-sm opacity-80">
+            <span>Copyright &copy; 2025. Todos os direitos reservados.</span>
+            <span>Desenvolvido por Lara Aguilar.</span>
           </div>
         </div>
       </footer>

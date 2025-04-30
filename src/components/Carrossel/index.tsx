@@ -25,7 +25,9 @@ export default function Carrossel() {
   }, [atual]);
 
   return (
-    <section className="py-12 bg-gray-50">
+    <section
+    className=" bg-white pb-8"
+    >
       <div className="max-w-3xl mx-auto relative">
         <img src={imagens[atual]} alt={`Slide ${atual + 1}`} className="w-full h-80 object-cover rounded shadow" />
         <button onClick={anterior} className="absolute top-1/2 left-2 bg-white rounded-full p-2 shadow -translate-y-1/2 hover:cursor-pointer"><IoIosArrowBack /></button>
