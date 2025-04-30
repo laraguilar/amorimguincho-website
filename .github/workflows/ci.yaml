@@ -30,7 +30,11 @@ jobs:
         uses: easingthemes/ssh-deploy@v2
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_PORT: 2222
           SOURCE: ./next
+          TARGET: /home3/${{ secrets.REMOTE_USER }}/public_html/
 
 
       # - name: Deploy to GitHub Pages
